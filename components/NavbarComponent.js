@@ -43,11 +43,11 @@ const NavbarComponent = () => {
         <Navbar expand="lg" variant="light">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link className={styles.a}> Inicio </Nav.Link>
-              <Nav.Link className={styles.a}>Estrenos</Nav.Link>
-              <Nav.Link className={styles.a}>Ranking</Nav.Link>
-              <Nav.Link className={styles.a}>asd</Nav.Link>
+            <Nav className={styles.links}>
+              <a className={styles.a}  href="#"> world </a>
+              <a className={styles.a}  href="#">sports</a>
+              <a className={styles.a}  href="#">national</a>
+              <a className={styles.a}  href="#">tecnology</a>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
