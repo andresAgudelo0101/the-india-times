@@ -1,10 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import NewsCard from "../components/NewsCard";
 
-
-export default function Home({worldNews }) {
-
-console.log(worldNews)
+export default function Home({ worldNews }) {
+  console.log(worldNews);
   return (
     <>
       <Head>
@@ -14,34 +13,26 @@ console.log(worldNews)
       </Head>
 
       <div className={styles.container}>
-       <div className={styles.grid}>
-            {worldNews?.data?.map((val)=>(
-                <a href="https://nextjs.org/docs" className={styles.card} key={val.title}>
-                <h2>{val.title} &rarr;</h2>
-                <div className={styles.containerGridNews}>
-                  <div>
-                    <img src={val.imageUrl} className={styles.img}/>
-                  </div>
-                  <div>
-                      <p>{val.content}</p>
-                  </div>
-                </div>
-                
-                <p><b>Author:</b> {val.author}</p>
-                </a>
-            ))}
+        <div className={styles.grid}>
+          {worldNews?.data?.map((val) => (
+            <NewsCard 
+              key={val.title}
+              title={val.title}
+              imageUrl={val.imageUrl}
+              content={val.content}
+              author={val.author}
+            />
+          ))}
         </div>
-       
       </div>
     </>
   );
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(
-    "https://inshorts.deta.dev/news?category=world"
-  ).then((res) => res.json());
-
+  const res = await fetch("https://inshorts.deta.dev/news?category=world").then(
+    (res) => res.json()
+  );
 
   return {
     props: {
