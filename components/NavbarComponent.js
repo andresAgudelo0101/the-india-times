@@ -1,9 +1,8 @@
-import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
-import Script from "next/script";
-import Head from "next/head";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavbarComponent = () => {
   const customStyles = {
@@ -29,11 +28,6 @@ const NavbarComponent = () => {
   };
   return (
     <>
-      <Head>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous"/>
-
-      </Head>
-   
       <div className={styles.navbar}>
         <div id="home">
           <h1 className={styles.title}>The India Times</h1>
