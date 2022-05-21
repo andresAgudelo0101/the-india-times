@@ -1,4 +1,5 @@
 import styles from "../styles/NewsCard.module.css";
+import Image from "next/image";
 
 function NewsCard(props) {
     return (
@@ -6,7 +7,7 @@ function NewsCard(props) {
               <h2>{props.title} &rarr;</h2>
               <div className={styles.containerGridNews}>
                 <div>
-                  <img src={props.imageUrl} className={styles.img} />
+                  <Image src={props.imageUrl} className={styles.img} />
                 </div>
                 <div>
                   <p>{props.content}</p>
