@@ -38,10 +38,11 @@ const NavbarComponent = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.containerResponsiveToggle}/>
           <Navbar.Collapse id="responsive-navbar-nav" className={styles.containerResponsiveLinks}>
             <Nav className={styles.links}>
-              <a className={styles.a}  href="#"> world </a>
-              <a className={styles.a}  href="#">sports</a>
-              <a className={styles.a}  href="#">national</a>
-              <a className={styles.a}  href="#">tecnology</a>
+              <a className={styles.a}  href="/"> world </a>
+              <a className={styles.a}  href="/sports">sports</a>
+              <a className={styles.a}  href="/national">national</a>
+              <a className={styles.a}  href="/technology">technology</a>
+              <a className={styles.a}  href="/about">about</a>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

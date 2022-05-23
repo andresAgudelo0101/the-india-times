@@ -1,7 +1,6 @@
 import NewsGrid from "../components/NewsGrid";
 
 export default function Home({ worldNews }) {
-  console.log(worldNews);
   return (
     <>
      <NewsGrid title="World" newsData={worldNews}/>

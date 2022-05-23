@@ -1,0 +1,21 @@
+.container{
+    height: 75vh;
+    background-color: #eeeeeb;
+    display: flex;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: 13% auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: -.06em;
+    line-height: 1.2;
+    margin: 0 0 30px;
+}
+
+.link{
+    color: blue;
+}
