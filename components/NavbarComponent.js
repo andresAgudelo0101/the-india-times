@@ -1,7 +1,7 @@
 import styles from "../styles/Navbar.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
-
+import Link from "next/link"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavbarComponent = () => {
@@ -38,11 +38,11 @@ const NavbarComponent = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.containerResponsiveToggle}/>
           <Navbar.Collapse id="responsive-navbar-nav" className={styles.containerResponsiveLinks}>
             <Nav className={styles.links}>
-              <a className={styles.a}  href="/"> world </a>
-              <a className={styles.a}  href="/sports">sports</a>
-              <a className={styles.a}  href="/national">national</a>
-              <a className={styles.a}  href="/technology">technology</a>
-              <a className={styles.a}  href="/about">about</a>
+              <Link className={styles.a}  href="/"> world </Link>
+              <Link className={styles.a}  href="/sports">sports</Link>
+              <Link className={styles.a}  href="/national">national</Link>
+              <Link className={styles.a}  href="/technology">technology</Link>
+              <Link className={styles.a}  href="/about">about</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

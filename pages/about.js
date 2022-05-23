@@ -1,5 +1,6 @@
 import styles from "../styles/About.module.css";
 import Head from "next/head";
+import Link from "next/link";
 
 function about() {
   return (
@@ -14,14 +15,17 @@ function about() {
           This project was created to learn Next js
           <br></br>
           Api Creator{" "}
+          <Link  href="https://github.com/cyberboysumanjay/Inshorts-News-API">
+    
+            
           <a
-            href="https://github.com/cyberboysumanjay/Inshorts-News-API"
-            target="_blank"
-            rel="noreferrer"
-            className={styles.link}
+             target="_blank"
+             rel="noreferrer"
+             className={styles.link}
           >
             GitHub
           </a>
+            </Link>
         </h1>
       </div>
     </>
