@@ -7,16 +7,17 @@ function NewsCard(props) {
               <h2>{props.title} &rarr;</h2>
               <div className={styles.containerGridNews}>
                 <div>
-                  <img src={props.imageUrl} className={styles.img} />
+                  <img src={props.imageUrl} className={styles.img} alt={props.title}/>
+                  <p>
+                    <b>Author:</b> {props.author}
+                  </p>
                 </div>
                 <div>
-                  <p>{props.content}</p>
+                  <p className={styles.contentNew}>{props.content}</p>
                 </div>
               </div>
 
-              <p>
-                <b>Author:</b> {props.author}
-              </p>
+             
             </div>
     )
 }

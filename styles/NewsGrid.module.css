@@ -1,0 +1,21 @@
+.container{
+    padding: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1,70%);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+  
+  }
+  
+  @media (max-width: 800px) {
+    .grid{
+      grid-template-columns: repeat(1,100%);
+    }
+  }
+  

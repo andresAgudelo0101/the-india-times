@@ -1,10 +1,4 @@
 
-.img{
-    width: 100%;
-    height:200px;
-    object-fit:cover;
-  }
-  
  
   .card {
     padding: 4px;
@@ -19,15 +13,9 @@
   }
   
   .img{
-    width: 100%;
-    max-height: 250px;
+    width: 95%;
+    max-height: 240px;
     object-fit: cover;
-  }
-  
-  .containerChildGrid{
-    display: grid;
-    grid-template-columns: repeat(2,49%);
-    background-color: #0070f3;
   }
   
   .containerGridNews{
@@ -35,12 +23,16 @@
     grid-template-columns: repeat(2,49%);
   }
   
+  .contentNew{
+    font-family: "open_sansregular";
+    font-size: 1.2rem;
+  }
   
   @media (max-width: 800px) {
-    .grid{
-      grid-template-columns: repeat(1,100%);
-    }
     .img{
       width: 100%;
+    }
+    .containerGridNews{
+      grid-template-columns: repeat(1,100%);
     }
   }

@@ -35,8 +35,8 @@ const NavbarComponent = () => {
 
         <div className={styles.nav}>
         <Navbar expand="lg" variant="light">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.containerResponsiveToggle}/>
+          <Navbar.Collapse id="responsive-navbar-nav" className={styles.containerResponsiveLinks}>
             <Nav className={styles.links}>
               <a className={styles.a}  href="#"> world </a>
               <a className={styles.a}  href="#">sports</a>
