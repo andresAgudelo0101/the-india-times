@@ -1,5 +1,5 @@
 .container{
-    height: 75vh;
+    height: 65vh;
     background-color: #eeeeeb;
     display: flex;
     grid-template-columns: repeat(1,100%);

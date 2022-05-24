@@ -12,9 +12,9 @@ function about() {
       </Head>
       <div className={styles.container}>
         <h1 className={styles.title}>
-          This project was created to learn Next js
+          This project was created to learn Next js.
           <br></br>
-          Api Creator{" "}
+          Check this api from the creator on {" "}
           <Link  href="https://github.com/cyberboysumanjay/Inshorts-News-API">
     
             
